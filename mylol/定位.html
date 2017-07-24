@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			div{
+				width: 180px;
+				height: 198px;
+				background: url(image/y1.png);
+			}
+			.yellow{
+				background: url(image/y2.png);
+				/*relative 相对于原来的位置进行定位*/
+				/*absolute 脱离半个文档流，相对于上一层容器进行定位*/
+				position: absolute;
+				left: 120px;
+				top: 100px;
+				/*right: auto;
+				bottom: ;*/
+			}
+		</style>
+	</head>
+	<body>
+		<!--shift + ctrl + r -->
+		<div></div>
+		<div class="yellow"></div>
+		<div></div>
+	</body>
+</html>

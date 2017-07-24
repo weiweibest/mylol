@@ -1,0 +1,203 @@
+/* 星 遍历页面的所有标签*/
+*{
+	/*外边距*/
+	margin: 0px;
+	/*内边距*/
+	padding: 0px;
+	/*去掉无序列表的实心点*/
+	list-style: none;
+	/*去掉a连接的下划线*/
+	text-decoration: none;
+}
+body{
+	font: normal 12px/1.6em Microsoft YaHei,Tahoma,simsun;
+}
+b{
+	font-weight: 100;
+}
+/*群组选择器*/
+html, body{
+	width: 100%;
+	height: 100%;
+}
+/* 井号 id选择器*/
+#headerBox{
+	height: 90px;
+	width: 100%;
+	background-color: #0b0b0b;
+}
+#header{
+	width: 1240px;
+	height: 90px;
+	/*参数一：距离上下的外边距  参数二：auto左右平均分配*/
+	margin: 0 auto;
+	/*相对定位：相对于当前位置进行定位*/
+	position: relative;
+}
+.logo{
+	width: 190px;
+	height: 100px;
+	/*背景：url() 资源的路径  no-repeat：不重复  */
+	/* 0 距离左侧的距离   -30px 距离上侧的距离*/
+	background: url(../img/spr-v2.png) no-repeat 0 -30px;
+	/*向左浮动*/
+	float: left;
+	position:absolute ;
+	left: 0;
+	/*堆叠顺序 */
+	z-index: 1;
+}
+.nav{
+	width: 600px;
+	height: 90px;
+	float: left;
+	/*距离左侧的外边距*/
+	margin-left: 185px;
+}
+/*派生选择器*/
+.nav li{
+	float: left;
+	width: 120px;
+	/*内容居中显示*/
+	text-align: center;
+}
+.nav li a{
+	/*显示出来*/
+	display: block;
+	margin-top: 30px;
+	/*修饰字体颜色*/
+	color: #fafafa;
+	/*设置字体大小*/
+	font-size: 18px;
+}
+.nav li a span{
+	display: block;
+	color: #838374;
+	/*缩放*/
+	transform: scale(0.6);
+}
+.go a{
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-right: 17px;
+	margin-top: 30px;
+	background: url(../img/spr-v2.png) no-repeat;
+}
+.go .search{
+	/*调整背景图片的位置
+	 * 参数一：水平位置
+	 * 参数二：竖直位置
+	 */
+	background-position:  -8px 0;
+}
+.go .phone{
+	background-position: -44px 0;
+}
+/*-----个人中心-----*/
+.user{
+	width: 350px;
+	height: 90px;
+	float: left;
+	position: relative;
+}
+.usersection{
+	width: 350px;
+	height: 90px;
+}
+.usersection div, .usersection i{
+	float: left;
+}
+
+.usersection i{
+	width: 73px;
+	height: 73px;
+	margin-top: 8px;
+	margin-left: 20px;
+	position: relative;
+}
+.usersection i img{
+	width: 100%;
+	/*边框的弧度 当宽高一致时，设置弧度为50%，就会变成圆*/
+	border-radius: 50%;
+}
+.usersection i b{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 99;
+	width: 73px;
+	height: 73px;
+	background: url(../img/spr-v2.png) no-repeat -1px -169px;
+}
+.usersection div{
+	width: 230px;
+	margin-left: 20px;
+}
+.usersection div h1{
+	font-size: 16px;
+	margin-top: 25px;
+	color: #f6f6f6;
+	font-weight: 100;
+}
+.usersection div h1 a{
+	color: blanchedalmond;
+	/*添加文本下面的下划线*/
+	text-decoration: underline;
+}
+.usersection div p{
+	color: #999;
+	margin-top: 3px;
+}
+/*-----展开部分的样式------*/
+.userselect{
+	position: absolute;
+	width: 350px;
+	height: 114px;
+	background: rgba(27,27,27,0.9);
+	color: #868686;
+	font-size: 14px;
+	top: 90px;
+	left: 0;
+	z-index: 88;
+	/*将展开的区域隐藏掉*/
+	display: none;
+}
+.user:hover .usersection{
+	background: rgba(27,27,27,0.9);
+}
+.user:hover .userselect{
+	display: block;
+}
+.userselect div{
+	/*内边距 
+	 	参数一：距离上
+	 	参数二：距离左右
+	 	参数三：距离下
+	 * */
+	padding: 20px 30px 0 ;
+	height: 78px;
+}
+.userselect a{
+	display: block;
+	height: 36px;
+	text-align: center; 
+	/*当line-height 和 height一致时，上下居中*/
+	line-height: 36px;
+	background: #161413;
+	color: #e0e0e0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
