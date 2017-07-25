@@ -94,7 +94,7 @@
 							</li>
 							<li>
 								<a href="#">
-									<li></li>
+									<s></s>
 									资料库
 								</a>
 							</li>
@@ -167,7 +167,7 @@
 							</li>
 							<li>
 								<a href="#">
-									<li></li>
+									<s></s>
 									活动中心
 								</a>
 							</li>
@@ -195,7 +195,7 @@
 						<ul>
 							<li>
 								<a href="#">
-									<i></i>
+									<s></s>
 									LPL职业联赛
 								</a>
 							</li>
@@ -241,7 +241,7 @@
 							</li>
 							<li>
 								<a href="#">
-									<i></i>
+									<s></s>
 									封号查询
 								</a>
 							</li>
@@ -274,11 +274,42 @@
 		</div>
 		<!--头部展开的区域-->
 		<div id="spread">
-			
+			<!--播放视频的标签 autoplay:自动播放 loop：轮播-->
+			<video autoplay loop>
+				<source src="http://ossweb-img.qq.com/images/lol/v2/banner/back-v7.mp4"
+					type="video/mp4"></source>
+			</video>
+			<div id="spread-section">
+				<h1>对决！黎明vs黑暗</h1>
+				<p>秩序。混沌。二者相争不绝，无所不用其极。疾风化尽，命数将成</p>
+				<div>
+					<video autoplay loop>
+						<source src="http://ossweb-img.qq.com/images/lol/v2/banner/small-v7.mp4"
+							type="video/mp4"></source>
+					</video>
+					<!--放置视频上的播放图标-->
+					<i class="alt-sp"></i>
+				</div>
+				<a href="#" class="detail">查看详情</a>
+			</div>
 		</div>
 		<!--内容区域-->
 		<div id="sectionBox"></div>
 		<!--底部-->
 		<div id="footerBox"></div>
+		<!--点击播放视频-->
+		<div id="alt-MP4">
+			<div>
+				<video autoplay loop>
+					<source src="http://ossweb-img.qq.com/images/lol/v2/banner/small-v7.mp4"
+						type="video/mp4"></source>
+				</video>
+				<span id="alt-close"> X </span>
+			</div>
+		</div>
+		
+		
+		
 	</body>
+	<script type="text/javascript" src="js/lol.js" ></script>
 </html>

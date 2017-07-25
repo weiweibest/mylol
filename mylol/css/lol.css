@@ -187,8 +187,162 @@ html, body{
 	background: #161413;
 	color: #e0e0e0;
 }
-
-
+.layer{
+	width: 100%;
+	height: 190px;
+	padding: 20px 0;
+	background: rgba(0,0,0,0.7);
+	position: absolute;
+	top: 90px;
+	left: 0;
+	/*display: block;*/
+	display: none; /*隐藏*/
+	z-index: 88;
+}
+#box{
+	width: 1240px;
+	height: 190px;
+	margin: 0 auto;
+}
+.box-list{
+	width: 600px;
+	height: 190px;
+	margin-left: 185px;
+}
+.box-list ul{
+	width: 120px;
+	float: left;
+	text-align: center;
+	line-height: 26px;
+}
+.box-list ul a{
+	color: #f5f5f5;
+	font-size: 14px;
+}
+.box-list ul a:hover{
+	color: orange;
+}
+.box-list ul a s{
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	background: url(../img/spr-v2.png) no-repeat -107px 0;
+}
+.box-list ul a b{
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	background: url(../img/spr-v2.png) no-repeat -129px 0;
+}
+#spread{
+	/*隐藏溢出*/
+	overflow: hidden;
+	min-width: 1240px;
+	height: 350px;
+	position: relative;
+}
+/*子元素选择器*/
+#spread>video{
+	position: absolute;
+	height: 350px;
+	left: 50%;
+	margin-left: -960px;
+	z-index: -1;
+}
+#spread-section{
+	width: 1240px;
+	height: 350px;
+	margin: 0 auto;
+}
+#spread-section h1{
+	font-size: 48px;
+	color: #f3d9a4;
+	height: 50px;
+	line-height: 50px;
+	margin-top: 40px;
+	/*背景颜色线性渐变*/
+	background-image: linear-gradient(to Top,#b18834,#f8dfac);
+	-webkit-background-clip: text;
+	/*设置文字的填充颜色为透明*/
+	-webkit-text-fill-color: transparent;
+	/*定义英文字符*/
+	text-transform: uppercase;
+}
+#spread-section p{
+	font-size: 14px;
+	color: #dbdbdb;
+	line-height: 35px;
+}
+#spread-section div{
+	border: 1px solid #987630;
+	width: 220px;
+	height: 120px;
+	position: relative;
+}
+#spread-section div video{
+	width: 100%;
+}
+#spread-section div i{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	width: 35px;
+	height: 50px;
+	background: url(../img/spr-v2.png) no-repeat -229px -32px;
+}
+.detail{
+	display: block;
+	width: 156px;
+	height: 36px;
+	/*边框：参数一：边框的宽度
+	 * 参数二： solid实线    dashed虚线
+	 * 参数三：边框的颜色
+	 */
+	border: 2px solid #c89b3c;
+	color:#c89b3c ;
+	text-align: center;
+	line-height: 36px;
+	font-size: 14px;
+	margin-top: 15px;
+}
+#alt-MP4{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0, 0.5);
+	/*相当于浏览器窗口进行定位*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	/*display: block;*/
+	display: none;
+}
+#alt-MP4 div{
+	width: 900px;
+	height: 550px;
+	position: relative;
+	margin: auto;
+	margin-top: 50%;
+	top: -650px;
+}
+#alt-MP4 div video{
+	width: 100%;
+	height: 100%;
+}
+#alt-MP4 div span{
+	position: absolute;
+	right: -50px;
+	top: 35px;
+	width: 50px;
+	height: 50px;
+	font-size: 80px;
+	color: #c89b3c;
+	/*修改鼠标的图标*/
+	cursor: pointer;
+}
 
 
 
