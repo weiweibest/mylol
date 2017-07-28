@@ -736,7 +736,71 @@ html, body{
 	margin-right: 3px;
 }
 
-
+/*选择器*/
+/*id选择器，使用 # */
+#footerBox{
+	/*最小宽度*/
+	min-width: 1240px;
+	height: 156px;
+	/*background 背景   url 资源文件的路径*/
+	/*no-repeat 不重复*/
+	/*center 居中显示*/
+	background: url(../img/bg-footer.jpg) no-repeat center ;
+}
+#footer{
+	width: 1240px;
+	height: 156px;
+	/*外边距*/
+	/*外边距 
+	 * 参数一：距离上下的外边距
+	 * 参数二：距离左右的距离  auto平均分配
+	 */
+	margin: 0 auto;
+}
+/* 点 类选择器 */
+.footersection{
+	width: 670px;
+	height: 100px;
+	/*距离上面的外边距*/
+	margin-top: 28px;
+	/*浮动，将内容调整到右侧*/
+	float: right;
+}
+/*派生选择器*/
+.footersection ul{
+	/*隐藏溢出*/
+	overflow: hidden;
+}
+.footersection ul li{
+	height: 14px;
+	/*浮动，向左浮动*/
+	float: left;
+	margin-right: 5px;
+	/*右边框*/
+	/*实线：solid */
+	/*虚线：dashed*/
+	border-right:1px solid #367693 ;
+	/*右边距*/
+	padding-right: 5px;
+	/*修改字体颜色*/
+	color: #367693;
+	/*行高(当行高和高度的值一致时，上下居中)*/
+	line-height: 14px;
+}
+/*思路：找到网站导航的li标签，去掉它的右边框*/
+.footersection li:last-child{
+	/*去掉边框*/
+	border: none;
+}
+.footersection a{
+	color: #367693;
+}
+.footersection p{
+	color: #425555;
+}
+.footersection .footer-li{
+	color: white;
+}
 
 
 
